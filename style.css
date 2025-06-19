@@ -1,0 +1,230 @@
+body, html {
+    margin: 0;
+    font-family: Montserrat;
+    background-color: black;
+    color: white; 
+    scroll-behavior: smooth;
+}
+header {
+    text-align: right;
+    padding: 10px;
+}
+li {
+    font-weight: bolder;
+    font-size: 22px;
+    list-style-type: none;
+    display: inline;
+    margin: 30px;
+}
+li a, .title {
+    text-decoration: none;
+    font-family: Anybody;
+    color: white;
+}
+li a:hover {
+    color: #FF3900;
+    transition: 0.6s;
+}
+.main-container {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,1));
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.text {
+    max-width: 50%;
+    padding-left: 150px;
+}
+.text h1 {
+    font-size: 4rem;
+    font-family: 'Montserrat', cursive;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+.text h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #FF3900;
+    font-weight: 300;
+}
+.title {
+    font-size: 35px;
+    margin: 70px 0px 0px 100px;
+}
+.projetos {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap: 30px;
+}
+.line, .projetos hr {
+    width: 90%;
+    margin: 40px;
+}
+.linguagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#js:hover {
+    box-shadow: rgba(255, 174, 0, 0.2) 0px 25px 50px;
+    border-color: rgb(255, 166, 0);
+}
+#css:hover {
+    box-shadow: rgba(0, 68, 255, 0.2) 0px 25px 50px;
+    border-color: rgb(0, 26, 255);
+}
+.linguagens li {
+    text-align: center;
+    background-color: #c5c5c511;
+    border-radius: 10px;
+    padding: 25px;
+}
+.linguagens li:hover {
+    transition: 0.8s;
+    transform: scale(1.1);
+    transition-property: all;
+    box-shadow: rgba(255, 57, 0, 0.2) 0px 25px 50px;
+    border-color: rgb(255, 57, 0);
+}
+.l {
+    height: 200px;
+}
+.projeto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+    gap: 20px;
+}
+.projeto:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+.projeto-img {
+    border-radius: 7px;
+    max-width: 40%;
+    height:  auto;
+}
+.projeto-texto {
+    width: 440px;
+}
+.proj-texto {
+    text-align: center;
+    justify-content: center;
+    margin: 100px;
+    line-height: 60px;
+}
+.projeto-texto h3 {
+    margin-bottom: 10px;
+}
+.projetos hr {
+    border: none; 
+    height: 2px; 
+    background: linear-gradient(90deg, #e6881c 0%, #be1e0d 100%);
+}
+.header-hr {
+    border: none; 
+    width: 100%;
+    height: 1px;
+    margin-top: 30px; 
+    background: linear-gradient(90deg, #e6881c 0%, #be1e0d 100%);
+}
+.texto {
+    line-height: 22px;
+    width: 400px;
+}
+.button {
+    text-decoration: none;
+    padding: 8px 16px;
+    background: linear-gradient(120deg, #b41500 20%, #ff812d 100%);
+    background-clip:border-box;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.button:hover {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    transition: 1.2s;
+    transition-property: all;
+    box-shadow: rgba(255, 94, 0, 0.493) 0px 10px 50px;
+}
+.sobre {
+    line-height: 1.5;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 50px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.sobre a{
+    background: linear-gradient(270deg, #d3440b 70%, #ff9d2d 100%);
+    background-clip: text;
+    color: transparent;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.me {
+    height: auto;
+    width: 60vh;
+    margin: 50px;
+    border: 1.5px solid;
+    border-color: #961A11;
+    box-shadow: 
+        0 0 30px #961a1159,
+        0 0 60px #c9000081,
+        0 0 90px rgba(255, 145, 0, 0.315);
+    border-radius: 800px;
+}
+.link ul li a {
+    font-family: "Montserrat";
+}
+.link ul li a:hover, .social-media ul li a:hover {
+    color: #C90000;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #c5c5c5c7; /* fundo do rodapé */
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 100px;
+    line-height: 30px;
+}
+.logo {
+    height: 60px;
+    background-color: white;
+    border-radius: 50px;
+}
+.social-media ul {
+    display: flex;
+    flex-direction: column;
+}
+.social-media a {
+    display: flex;
+    align-items: center;
+}
+.social-media li, .social-media h4  {
+    margin: 30px;
+}
+.s-logo {
+    height: 50vh;
+    margin: 50px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
